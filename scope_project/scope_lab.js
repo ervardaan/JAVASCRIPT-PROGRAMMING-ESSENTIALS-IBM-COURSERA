@@ -24,6 +24,19 @@ function show(){
     }
     show();
     
-    console.log(functionVar); // Throws ReferenceError
-    console.log(functionLet); // Throws ReferenceError
-    console.log(functionConst); // Throws ReferenceError
+    //console.log(functionVar); // Throws ReferenceError
+    //console.log(functionLet); // Throws ReferenceError
+    //console.log(functionConst); // Throws ReferenceError
+    {
+        let a="hi";
+        const b="bye";
+        var c="hello";
+        a="hihi";
+       // b="byebye";//only this gives error
+        c="hel";
+    }
+    //assignment outside of block can be done(even for const variable)
+    a="aa";
+    b="bb";
+    c="cc";
+    
